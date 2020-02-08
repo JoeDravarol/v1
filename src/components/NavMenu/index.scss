@@ -1,0 +1,55 @@
+.navigation-container {
+  background: $bg-secondary;
+  position: fixed;
+  top: 0;
+  height: auto;
+  width: 100%;
+  z-index: 55;
+}
+
+.hamburger-container {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn {
+  background: transparent;
+  color: inherit;
+  font-size: 2.25em;
+  margin-left: 20px;
+  border: none;
+
+  &:hover {
+    color: $pop-color;
+  }
+}
+
+.main-nav {
+  max-height: 270px;
+  overflow: hidden;
+  box-shadow: inset 0 7px 22px -17px rgba(0,0,0,.5);
+  transition: all .2s cubic-bezier(.65,.05,.36,1);
+
+  &--collapse {
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: .75em 1.5em;
+    font-size: 1.15em;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      color: $pop-color;
+      background: $bg-tertiary;
+    }
+  }
+}
+
+.social {
+  display: none;
+}

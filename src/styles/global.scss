@@ -1,0 +1,11 @@
+@import 'styles/base';
+
+.svg {
+  width: 25px;
+  height: 25px;
+  fill: $bg-primary;
+
+  &:hover {
+    fill: $pop-color;
+  }
+}

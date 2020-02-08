@@ -28,6 +28,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [`src`, `src/styles`],
+        data: `@import 'src/styles/variables';`,
+      },
+    },
+    `gatsby-alias-imports`,
   ],
 }
