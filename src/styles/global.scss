@@ -9,3 +9,24 @@
     fill: $pop-color;
   }
 }
+
+.section {
+  height: auto;
+  margin: 0 auto;
+  padding: 2.5em $padding-md;
+
+  &__heading {
+    margin-bottom: 2em;
+    position: relative;
+
+    &::after {
+      content: "";
+      background: $pop-color;
+      height: 2px;
+      width: 100px;
+      position: absolute;
+      left: -10px;
+      bottom: -10px;
+    }
+  }
+}

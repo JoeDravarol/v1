@@ -16,10 +16,10 @@ import './index.scss'
 
 const Layout = ({ children }) => {
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <NavMenu />
 
-      <main className='main'>{children}</main>
+      <main className="main">{children}</main>
     </div>
   )
 }
