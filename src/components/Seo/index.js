@@ -32,6 +32,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
+      defaultTitle="Joe Lee | Fullstack Web Developer"
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
