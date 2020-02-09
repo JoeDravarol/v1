@@ -1,0 +1,25 @@
+.reasons {
+  counter-reset: reason;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2em;
+}
+
+.reason {
+
+  &__title {
+    margin-bottom: .5em;
+    font-size: 1.3em;
+
+    &::before {
+      counter-increment: reason;
+      content: "0" counter(reason) ".";
+      margin-right: 10px;
+      color: $pop-color;
+    }
+  }
+
+  &__description {
+    color: $text-color-secondary;
+  }
+}
