@@ -14,7 +14,7 @@ const NavMenu = () => {
   }
 
   return (
-    <header class="navigation-container">
+    <header className="navigation-container">
       <HamburgerBtn handleToggleNavOpen={handleToggleNavOpen} />
       <Nav isNavOpen={isNavOpen} />
       <NavSocial />
