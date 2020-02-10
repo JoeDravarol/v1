@@ -18,3 +18,12 @@
     color: $text-color-secondary;
   }
 }
+
+@include mq(tall) {
+  .skill {
+
+    &__list {
+      font-size: 1.1em;
+    }
+  }
+}

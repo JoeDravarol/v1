@@ -77,3 +77,12 @@
     margin-left: 10px;
   }
 }
+
+@include mq(tall) {
+  .featured {
+
+    &__description {
+      font-size: 1.15em;
+    }
+  }
+}

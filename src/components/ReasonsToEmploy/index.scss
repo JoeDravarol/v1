@@ -24,11 +24,11 @@
   }
 }
 
-@include mq(short) {
+@include mq(tall) {
   .reason {
 
     &__description {
-      font-size: 1.1em;
+      font-size: 1.15em;
     }
   }
 }

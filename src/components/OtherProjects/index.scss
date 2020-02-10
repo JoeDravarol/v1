@@ -33,3 +33,12 @@
     transform: translateY(-5px);
   }
 }
+
+@include mq(tall) {
+  .other-project {
+
+    &__title {
+      font-size: 1.5em;
+    }
+  }
+}
