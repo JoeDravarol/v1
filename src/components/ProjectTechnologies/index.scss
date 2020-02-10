@@ -1,0 +1,12 @@
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  color: $text-color-tertiary;
+}
+
+.technology {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: .9em;
+}

@@ -1,0 +1,15 @@
+.project-links {
+
+  &__github,
+  &__demo {
+    padding: 10px;
+  }
+
+  &__github {
+    padding-left: 0;
+  }
+
+  &__demo {
+    padding-right: 0;
+  }
+}

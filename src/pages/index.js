@@ -4,6 +4,7 @@ import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import Home from 'components/Home'
 import About from 'components/About'
+import FeaturedProjects from 'components/FeaturedProjects'
 import ReasonsToEmploy from 'components/ReasonsToEmploy'
 import Skills from 'components/Skills'
 
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <SEO />
     <Home />
     <About />
+    <FeaturedProjects />
     <Skills />
     <ReasonsToEmploy />
   </Layout>
