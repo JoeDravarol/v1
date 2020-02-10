@@ -20,3 +20,16 @@
     }
   }
 }
+
+@include mq(short) {
+  .home {
+    
+    &__heading {
+      font-size: 1.5em;
+    }
+
+    &__text {
+      font-size: 1.15em;
+    }
+  }
+}

@@ -23,3 +23,12 @@
     color: $text-color-secondary;
   }
 }
+
+@include mq(short) {
+  .reason {
+
+    &__description {
+      font-size: 1.1em;
+    }
+  }
+}

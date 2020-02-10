@@ -4,3 +4,12 @@
     color: $text-color-secondary;
   }
 }
+
+@include mq(short) {
+  .about {
+
+    &__text {
+      font-size: 1.15em;
+    }
+  }
+}

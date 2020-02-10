@@ -30,3 +30,13 @@
     }
   }
 }
+
+@include mq(short) {
+  .section {
+    padding: 2.5em $padding-lg;
+    
+    &__heading {
+      font-size: 1.65em;
+    }
+  }
+}
