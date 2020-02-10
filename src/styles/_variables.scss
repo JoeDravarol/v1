@@ -4,3 +4,35 @@ $padding-sm: 10px;
 $padding-md: 25px;
 $padding-lg: 50px;
 $padding-xl: 100px;
+
+$breakpoints: (
+  short: 450px,
+  tall: 650px,
+  grande: 800px,
+  venti: 1050px,
+  trenta: 1200px,
+  depth-charge: 1600px
+);
+
+@mixin mq($breakpoint) {
+  // Retrieves breakpoint value from key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // If the key exists in map
+  @if $value != null {
+    // Get and use the breakpoint value
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in map
+  @else {
+    @warn "No value could be retrieved from `#{$breakpoint}`."
+      + "Using value `#{$breakpoint}` as custom breakpoint.";
+
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
