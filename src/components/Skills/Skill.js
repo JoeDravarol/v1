@@ -6,7 +6,9 @@ const Skill = ({ title, skills }) => (
 
     <ul className="skill__ul">
       {skills.map(skill => (
-        <li className="skill__list">{skill}</li>
+        <li key={`${title}-${skill}`} className="skill__list">
+          {skill}
+        </li>
       ))}
     </ul>
   </section>

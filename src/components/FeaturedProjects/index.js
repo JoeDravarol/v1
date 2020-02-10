@@ -41,7 +41,7 @@ const FeaturedProjects = () => {
       {projects.map(project => {
         const imageData = project.image.childImageSharp.fluid
 
-        return <Project {...project} imageData={imageData} />
+        return <Project key={project.id} {...project} imageData={imageData} />
       })}
     </section>
   )
