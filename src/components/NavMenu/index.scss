@@ -53,3 +53,48 @@
 .social {
   display: none;
 }
+
+// Change to left side nav
+@include mq(grande) {
+  // Hide hamburger button
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .navigation-container {
+    position: sticky;
+    width: 26%;
+    max-width: 260px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .main-nav {
+
+    &--collapse {
+      visibility: initial;
+      max-height: initial;
+    }
+
+    &__link {
+      padding: 1em .75em;
+    }
+  }
+  
+  .social {
+    display: initial;
+
+    &__ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5em;
+    }
+
+    &__link {
+      padding: 5px;
+    }
+  }
+}

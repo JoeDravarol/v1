@@ -23,6 +23,7 @@
 
 @include mq(short) {
   .home {
+    padding: 0 $padding-lg;
     
     &__heading {
       font-size: 1.5em;
@@ -31,5 +32,11 @@
     &__text {
       font-size: 1.15em;
     }
+  }
+}
+
+@include mq(grande) {
+  .home {
+    height: 100vh;
   }
 }
