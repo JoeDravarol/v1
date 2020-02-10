@@ -40,3 +40,16 @@
     }
   }
 }
+
+@include mq(venti) {
+  .section {
+    
+    &__heading {
+      font-size: 1.7em;
+    }
+
+    &__text {
+      font-size: 1.4em;
+    }
+  }
+}

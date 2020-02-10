@@ -98,3 +98,12 @@
     }
   }
 }
+
+@include mq(venti) {
+  .main-nav {
+
+    &__link {
+      font-size: 1.3em;
+    }
+  }
+}

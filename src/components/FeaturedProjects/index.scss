@@ -86,3 +86,57 @@
     }
   }
 }
+
+@include mq(venti) {
+  .featured {
+    
+    &__content {
+      grid-column: 1 / span 6;
+    }
+
+    &__description {
+      background: $bg-secondary;
+      padding: 1.5em;
+      border-radius: 5px;
+
+      &:hover {
+        box-shadow: -7px 5px 15px -8px rgba(0, 0, 0, 0.4)
+      }
+    }
+
+    &__img-container {
+      grid-column: 6 / -1;
+      
+      &:hover::after {
+        cursor: pointer;
+        mix-blend-mode: normal;
+        filter: none;
+        z-index: -1;
+      }
+    }
+
+    &__img {
+      &:hover {
+        transition: all .25s ease-in-out;
+        cursor: pointer;
+        mix-blend-mode: normal;
+        filter: none;
+      }
+    }
+  }
+
+  .featured:nth-of-type(even) {
+
+    .featured__content {
+      grid-column: 6 / -1;
+    }
+
+    .featured__description:hover {
+      box-shadow: 7px 5px 15px -8px rgba(0, 0, 0, 0.4)
+    }
+    
+    .featured__img-container {
+      grid-column: 1 / span 6;
+    }
+  }
+}
