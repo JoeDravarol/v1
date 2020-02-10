@@ -9,7 +9,7 @@ const Project = ({
   description,
   technologies,
   githubLink,
-  demoLink
+  demoLink,
 }) => {
   return (
     <section className="other-project">

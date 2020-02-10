@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Image from 'gatsby-image'
 
 import DemoLink from './DemoLink'
 import ProjectTechnologies from 'components/ProjectTechnologies'
@@ -9,13 +10,13 @@ const Project = ({
   title,
   description,
   technologies,
-  github,
-  demo,
-  imgSource,
+  githubLink,
+  demoLink,
+  imageData,
 }) => (
   <section className="featured">
     <div className="featured__content">
-      <DemoLink link={demo}>
+      <DemoLink link={demoLink}>
         <h3 className="featured__title">{title}</h3>
       </DemoLink>
       <p className="featured__description">{description}</p>
@@ -25,14 +26,18 @@ const Project = ({
         projectTitle={title}
         technologies={technologies}
       />
-      <ProjectLinks projectType="featured" github={github} demo={demo} />
+      <ProjectLinks
+        projectType="featured"
+        github={githubLink}
+        demo={demoLink}
+      />
     </div>
 
     <div className="featured__img-container">
-      <DemoLink link={demo}>
-        <img
+      <DemoLink link={demoLink}>
+        <Image
           className="featured__img"
-          src={imgSource}
+          fluid={imageData}
           alt={`${title}'s project preview`}
         />
       </DemoLink>
@@ -44,9 +49,9 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   technologies: PropTypes.array.isRequired,
-  github: PropTypes.string.isRequired,
-  demo: PropTypes.string.isRequired,
-  imgSource: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
+  demoLink: PropTypes.string.isRequired,
+  imageData: PropTypes.object.isRequired,
 }
 
 export default Project

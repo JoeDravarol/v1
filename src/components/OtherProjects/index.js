@@ -26,15 +26,14 @@ const OtherProjects = () => {
 
   return (
     <section className="section other-projects">
-      <h2 className="section__heading other-projects__heading">Other Projects</h2>
+      <h2 className="section__heading other-projects__heading">
+        Other Projects
+      </h2>
 
       <div className="other-projects__content">
-        {projects.map(project =>
-          <Project
-            key={project.id}
-            {...project}
-          />
-        )}
+        {projects.map(project => (
+          <Project key={project.id} {...project} />
+        ))}
       </div>
     </section>
   )

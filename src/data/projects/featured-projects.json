@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Cafe Lounge",
+    "description": "A landing page for Cafe Lounge who specialise in sourcing and roasting coffee for the premium commercial and speciality coffee sector.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "GSAP3", "Scroll Magic"],
+    "githubLink": "https://github.com/JoeDravarol/cafe-lounge",
+    "demoLink": "https://joedravarol.github.io/cafe-lounge/",
+    "image": "../../images/cafe-lounge.png"
+  },
+  {
+    "title": "Movie Munch",
+    "description": "A movie application to search for your favourite movies and to browse the latest and greatest films.",
+    "technologies": ["React", "Redux", "Styled Components"],
+    "githubLink": "https://github.com/JoeDravarol/movie-munch",
+    "demoLink": "https://joedravarol.github.io/movie-munch/",
+    "image": "../../images/cafe-lounge.png"
+  },
+  {
+    "title": "Blog List App",
+    "description": "An application to share your favourite blogs with other users on the website. This app was mainly used as a learning experience to practice unit, integration and end to end testing methods. If you would like to login, you can use 'hellas' for the username and 'fruit' for the password.",
+    "technologies": [
+      "React",
+      "Redux",
+      "Semantic UI",
+      "MongoDB",
+      "Jest",
+      "Cypress"
+    ],
+    "githubLink": "https://github.com/JoeDravarol/blog-list",
+    "demoLink": "https://joedravarol.github.io/blog-list/",
+    "image": "../../images/bloglist.png"
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "This very website that you are browsing is my personal portfolio used to showcase my developer related projects. The website is fully responsive. Gatsby was used because it offers good SEO and fast performance which was a perfect fit for my portfolio.",
+    "technologies": ["React", "Gatsby", "SCSS"],
+    "githubLink": "https://github.com/JoeDravarol/portfolio",
+    "demoLink": "https://joedravarol.github.io/portfolio/",
+    "image": "../../images/cafe-lounge.png"
+  }
+]
