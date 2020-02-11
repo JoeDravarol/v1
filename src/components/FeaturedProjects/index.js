@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
             demoLink
             image {
               childImageSharp {
-                fluid {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
