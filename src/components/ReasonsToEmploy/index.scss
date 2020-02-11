@@ -32,3 +32,16 @@
     }
   }
 }
+
+@include mq(trenta) {
+  .reasons-to-employ {
+    margin-bottom: 5em;
+  }
+  
+  .reason {
+    
+    &__description {
+      font-size: 1.25em;
+    }
+  }
+}

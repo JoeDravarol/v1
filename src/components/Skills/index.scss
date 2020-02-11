@@ -27,3 +27,16 @@
     }
   }
 }
+
+@include mq(trenta) {
+  .skills-content {
+    max-width: 800px;
+  }
+
+  .skill {
+
+    &__list {
+      font-size: 1.25em;
+    }
+  }
+}

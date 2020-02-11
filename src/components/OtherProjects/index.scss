@@ -42,3 +42,12 @@
     }
   }
 }
+
+@include mq(trenta) {
+  .other-project {
+
+    &__description {
+      font-size: 1.12em;
+    }
+  }
+}

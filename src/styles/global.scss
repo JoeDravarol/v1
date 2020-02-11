@@ -53,3 +53,15 @@
     }
   }
 }
+
+@include mq(trenta) {
+  .section {
+    padding: 2.5em $padding-xl;
+    margin: 5em auto 0;
+    max-width: 1200px;
+
+    &__heading {
+      font-size: 2em;
+    }
+  }
+}

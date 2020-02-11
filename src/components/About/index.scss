@@ -13,3 +13,12 @@
     }
   }
 }
+
+@include mq(trenta) {
+  .about {
+
+    &__text {
+      font-size: 1.5em;
+    }
+  }
+}

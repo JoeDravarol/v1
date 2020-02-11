@@ -40,3 +40,17 @@
     height: 100vh;
   }
 }
+
+@include mq(trenta) {
+  .home {
+    margin-top: 0;
+    padding: 0 $padding-xl;
+    max-width: 100%;
+  }
+}
+
+@include mq(depth-charge) {
+  .home {
+    padding: 0 300px;
+  }
+}

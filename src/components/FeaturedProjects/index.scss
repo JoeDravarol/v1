@@ -140,3 +140,12 @@
     }
   }
 }
+
+@include mq(depth-charge) {
+  .featured {
+
+    &__description {
+      font-size: 1.25em;
+    }
+  }
+}
