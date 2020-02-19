@@ -12,8 +12,8 @@
     "description": "A movie application to search for your favourite movies and to browse the latest and greatest films.",
     "technologies": ["React", "Redux", "Styled Components"],
     "githubLink": "https://github.com/JoeDravarol/movie-munch",
-    "demoLink": "https://joedravarol.github.io/movie-munch/",
-    "image": "../../images/cafe-lounge.png"
+    "demoLink": "http://pointless-movie-munch.surge.sh/",
+    "image": "../../images/movie-munch.png"
   },
   {
     "title": "Blog List App",
