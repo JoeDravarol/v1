@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import SEO from 'components/Seo'
@@ -9,16 +10,87 @@ import OtherProjects from 'components/OtherProjects'
 import ReasonsToEmploy from 'components/ReasonsToEmploy'
 import Skills from 'components/Skills'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO />
-    <Home />
-    <About />
-    <FeaturedProjects />
-    <OtherProjects />
-    <Skills />
-    <ReasonsToEmploy />
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  const {
+    allContentfulFeaturedProject,
+    allContentfulOtherProject,
+    allContentfulPortfolioSkill,
+  } = data
+
+  return (
+    <Layout>
+      <SEO />
+      <Home />
+      <About />
+      <FeaturedProjects />
+      <OtherProjects />
+      <Skills />
+      <ReasonsToEmploy />
+    </Layout>
+  )
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query PortfolioContentsQuery {
+    allContentfulFeaturedProject(filter: { node_locale: { eq: "en-US" } }) {
+      edges {
+        node {
+          id
+          title
+          description {
+            description
+          }
+          technologies {
+            id
+            content
+          }
+          repositoryLink
+          demoLink
+          previewImage {
+            children {
+              ... on ImageSharp {
+                id
+                fixed(width: 1600) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    allContentfulOtherProject(filter: { node_locale: { eq: "en-US" } }) {
+      edges {
+        node {
+          id
+          title
+          description {
+            description
+          }
+          technologies {
+            id
+            content
+          }
+          repositoryLink
+          demoLink
+        }
+      }
+    }
+
+    allContentfulPortfolioSkill(filter: { node_locale: { eq: "en-US" } }) {
+      edges {
+        node {
+          id
+          title
+          skills {
+            id
+            content
+          }
+        }
+      }
+    }
+  }
+`
