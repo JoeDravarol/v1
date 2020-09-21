@@ -1,27 +1,10 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import Skill from './Skill'
 
 import './index.scss'
 
-const SkillsList = () => {
-  const { allSkillsJson } = useStaticQuery(graphql`
-    query Skills {
-      allSkillsJson {
-        edges {
-          node {
-            id
-            title
-            skills
-          }
-        }
-      }
-    }
-  `)
-
-  const allSkills = allSkillsJson.edges.map(edge => edge.node)
-
+const SkillsList = ({ allSkills }) => {
   return (
     <section className="section skills">
       <h2 className="section__heading skills__heading">Tools I've work with</h2>

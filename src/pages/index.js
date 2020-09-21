@@ -17,6 +17,15 @@ const IndexPage = ({ data }) => {
     allContentfulPortfolioSkill,
   } = data
 
+  // Collect data from graphql edges
+  const allSkills = allContentfulPortfolioSkill.edges.map(edge => edge.node)
+  const allFeaturedProjects = allContentfulFeaturedProject.edges.map(
+    edge => edge.node
+  )
+  const allOtherProjects = allContentfulOtherProject.edges.map(
+    edge => edge.node
+  )
+
   return (
     <Layout>
       <SEO />
@@ -24,7 +33,7 @@ const IndexPage = ({ data }) => {
       <About />
       <FeaturedProjects />
       <OtherProjects />
-      <Skills />
+      <Skills allSkills={allSkills} />
       <ReasonsToEmploy />
     </Layout>
   )
