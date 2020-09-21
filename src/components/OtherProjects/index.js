@@ -1,29 +1,10 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+
 import Project from './Project'
 
 import './index.scss'
 
-const OtherProjects = () => {
-  const { allOtherProjectsJson } = useStaticQuery(graphql`
-    query OtherProjects {
-      allOtherProjectsJson {
-        edges {
-          node {
-            id
-            title
-            description
-            technologies
-            githubLink
-            demoLink
-          }
-        }
-      }
-    }
-  `)
-
-  const projects = allOtherProjectsJson.edges.map(edge => edge.node)
-
+const OtherProjects = ({ projects }) => {
   return (
     <section className="section other-projects">
       <h2 className="section__heading other-projects__heading">

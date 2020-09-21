@@ -8,13 +8,13 @@ const Project = ({
   title,
   description,
   technologies,
-  githubLink,
+  repositoryLink,
   demoLink,
 }) => {
   return (
     <section className="other-project">
       <h3 className="other-project__title">{title}</h3>
-      <p className="other-project__description">{description}</p>
+      <p className="other-project__description">{description.description}</p>
 
       <ProjectTechnologies
         projectType="other-project"
@@ -23,7 +23,7 @@ const Project = ({
       />
       <ProjectLinks
         projectType="other-project"
-        github={githubLink}
+        repository={repositoryLink}
         demo={demoLink}
       />
     </section>

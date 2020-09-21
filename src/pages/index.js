@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
       <Home />
       <About />
       <FeaturedProjects />
-      <OtherProjects />
+      <OtherProjects projects={allOtherProjects} />
       <Skills allSkills={allSkills} />
       <ReasonsToEmploy />
     </Layout>

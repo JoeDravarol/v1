@@ -6,14 +6,15 @@ const ProjectTechnologies = ({ projectType, projectTitle, technologies }) => (
   // projectType is either 'featured' or 'other'
 
   <ul className={`technologies ${projectType}__technologies`}>
-    {technologies.map(technology => (
-      <li
-        key={`${projectTitle}'s ${technology}`}
-        className={`technology ${projectType}__technology`}
-      >
-        {technology}
-      </li>
-    ))}
+    {technologies.map(technology => {
+      const { id, content } = technology
+
+      return (
+        <li key={id} className={`technology ${projectType}__technology`}>
+          {content}
+        </li>
+      )
+    })}
   </ul>
 )
 

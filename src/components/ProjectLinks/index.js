@@ -7,7 +7,7 @@ import DemoSvg from 'components/Svg/Demo'
 import './index.scss'
 
 // projectType is either 'featured' or 'other'
-const ProjectLinks = ({ projectType, github, demo }) => {
+const ProjectLinks = ({ projectType, repository, demo }) => {
   const relAttribute = 'nofollow noopener noreferrer'
   const targetAttribute = '_blank'
 
@@ -15,7 +15,7 @@ const ProjectLinks = ({ projectType, github, demo }) => {
     <div className={`project-links ${projectType}__links`}>
       <a
         className={`project-links__github ${projectType}__github`}
-        href={github}
+        href={repository}
         target={targetAttribute}
         rel={relAttribute}
         aria-label="Github Link"
@@ -37,7 +37,7 @@ const ProjectLinks = ({ projectType, github, demo }) => {
 
 ProjectLinks.propTypes = {
   projectType: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired,
+  repository: PropTypes.string.isRequired,
   demo: PropTypes.string.isRequired,
 }
 
