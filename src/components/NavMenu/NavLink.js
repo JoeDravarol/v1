@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const NavLink = ({ classNames, to, children }) => (
-  <a className={classNames} href={to}>
+const NavLink = ({ classNames, to, children, newTab }) => (
+  <a className={classNames} href={to} target={newTab ? '_blank' : '_self'}>
     {children}
   </a>
 )
