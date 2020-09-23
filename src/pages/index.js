@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
       <SEO />
       <Home />
       <About />
-      <FeaturedProjects />
+      <FeaturedProjects projects={allFeaturedProjects} />
       <OtherProjects projects={allOtherProjects} />
       <Skills allSkills={allSkills} />
       <ReasonsToEmploy />
@@ -58,13 +58,8 @@ export const pageQuery = graphql`
           repositoryLink
           demoLink
           previewImage {
-            children {
-              ... on ImageSharp {
-                id
-                fixed(width: 1600) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
+            fluid(maxWidth: 600) {
+              ...GatsbyContentfulFluid
             }
           }
         }

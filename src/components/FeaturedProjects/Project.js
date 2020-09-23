@@ -10,7 +10,7 @@ const Project = ({
   title,
   description,
   technologies,
-  githubLink,
+  repositoryLink,
   demoLink,
   imageData,
 }) => (
@@ -19,7 +19,7 @@ const Project = ({
       <DemoLink link={demoLink}>
         <h3 className="featured__title">{title}</h3>
       </DemoLink>
-      <p className="featured__description">{description}</p>
+      <p className="featured__description">{description.description}</p>
 
       <ProjectTechnologies
         projectType="featured"
@@ -28,7 +28,7 @@ const Project = ({
       />
       <ProjectLinks
         projectType="featured"
-        github={githubLink}
+        github={repositoryLink}
         demo={demoLink}
       />
     </div>
@@ -49,7 +49,7 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   technologies: PropTypes.array.isRequired,
-  githubLink: PropTypes.string.isRequired,
+  repositoryLink: PropTypes.string.isRequired,
   demoLink: PropTypes.string.isRequired,
   imageData: PropTypes.object.isRequired,
 }
