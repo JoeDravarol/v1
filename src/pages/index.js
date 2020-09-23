@@ -58,7 +58,7 @@ export const pageQuery = graphql`
           repositoryLink
           demoLink
           previewImage {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 1200) {
               ...GatsbyContentfulFluid
             }
           }

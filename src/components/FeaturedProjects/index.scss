@@ -125,7 +125,7 @@
 
   .featured:nth-of-type(even) {
     .featured__content {
-      grid-column: 6 / -1;
+      grid-column: 7 / -1;
     }
 
     .featured__description:hover {
@@ -133,7 +133,7 @@
     }
 
     .featured__img-container {
-      grid-column: 1 / span 6;
+      grid-column: 1 / span 7;
     }
   }
 }
