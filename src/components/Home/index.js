@@ -46,7 +46,7 @@ const Home = () => {
         <span className="home__heading--name">Joe Lee.</span>
       </h1>
       <p className="section__text home__text">
-        I'm a fullstack web developer based in Manchester.
+        I'm a front-end web developer based in Manchester.
       </p>
     </BackgroundImage>
   )
