@@ -21,8 +21,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: `Joe Lee | Fullstack Web Developer`,
-    description: `Hello, My name is Joe. I'm a Fullstack Web Developer who enjoy spending my free time increasing my knowledge of Web Development, tinkering with new technologies.`,
+    title: `Joe Lee | Front-End Web Developer`,
+    description: `Hello, My name is Joe. I'm a Front-End Web Developer who enjoy spending my free time increasing my knowledge of Web Development and learning new technologies.`,
     author: `Joe Lee`,
   },
   plugins: [
