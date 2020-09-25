@@ -28,7 +28,7 @@ const Project = ({
       />
       <ProjectLinks
         projectType="featured"
-        github={repositoryLink}
+        repository={repositoryLink}
         demo={demoLink}
       />
     </div>
