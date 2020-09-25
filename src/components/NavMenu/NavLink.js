@@ -2,15 +2,20 @@ import React from 'react'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import PropTypes from 'prop-types'
 
-const NavLink = ({ classNames, to, children, newTab }) => (
-  <AnchorLink
-    className={classNames}
-    to={to}
-    target={newTab ? '_blank' : '_self'}
-  >
-    {children}
-  </AnchorLink>
-)
+const NavLink = ({ classNames, to, children, newTab }) => {
+  if (newTab)
+    return (
+      <a className={classNames} href={to} target="_blank">
+        {children}
+      </a>
+    )
+
+  return (
+    <AnchorLink className={classNames} to={to}>
+      {children}
+    </AnchorLink>
+  )
+}
 
 NavLink.propTypes = {
   classNames: PropTypes.string,
