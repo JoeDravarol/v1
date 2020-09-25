@@ -17,7 +17,7 @@ const Home = () => {
         }
         desktopImage: file(relativePath: { eq: "starry-sunset-hero.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 4160, quality: 100) {
+            fluid(maxWidth: 1920, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
