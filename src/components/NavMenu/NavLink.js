@@ -5,7 +5,12 @@ import PropTypes from 'prop-types'
 const NavLink = ({ classNames, to, children, newTab }) => {
   if (newTab)
     return (
-      <a className={classNames} href={to} target="_blank">
+      <a
+        className={classNames}
+        href={to}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
         {children}
       </a>
     )

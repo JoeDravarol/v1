@@ -47,7 +47,7 @@ const Project = ({
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.object.isRequired,
   technologies: PropTypes.array.isRequired,
   repositoryLink: PropTypes.string.isRequired,
   demoLink: PropTypes.string.isRequired,
