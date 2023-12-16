@@ -6,7 +6,7 @@ Personal portfolio built using Gatsby to showcase my web development projects.
 
 ## Demo
 
-[Live version on Netifly](https://joedravarol.netlify.app/)
+[Live version on Netifly](https://v1joedravarol.netlify.app/)
 
 ## Table of contents
 
